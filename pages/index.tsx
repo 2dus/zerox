@@ -22,8 +22,8 @@ const ZeroxAI = () => {
       } else {
         setResponse("Error: Could not generate code.");
       }
-    } catch (err) {
-      setResponse("An error occurred while generating the code.");
+    } catch {
+      setResponse("An error occurred while generating the code."); // Removed 'err' as it's unused
     }
 
     setLoading(false);
